@@ -33,7 +33,7 @@ export default function HomePage() {
       </div>
       <div className="grid grid-cols-2 gap-3 text-center mt-5">
         {stats.map(stat => (
-          <div className={twMerge(
+          <div key={stat.name} className={twMerge(
             "bg-primary-200",
             "py-10 rounded-lg",
             "custom-shadow",
